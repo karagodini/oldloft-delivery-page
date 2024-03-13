@@ -1,0 +1,119 @@
+.delivery-container {
+    text-align: center;
+}
+
+.delivery-container h1 {
+    font-size: 2.4375em;
+}
+
+.delivery-container .desc {
+    font-size: 21px;
+    opacity: 0.6;
+}
+
+.delivery-blocks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+}
+
+.delivery-blocks .delivery-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 33%;
+}
+
+.delivery-blocks .delivery-block .block-number {
+    font-size: 21px;
+    font-weight: 700;
+    padding-bottom: 16px;
+}
+
+.delivery-blocks .delivery-block .block-title {
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 10px;
+    padding-top: 25px;
+}
+
+.delivery-blocks .delivery-block .block-desc {
+    font-size: 16px;
+    opacity: 0.7;
+    width: 330px;
+}
+
+.delivery-container h2 {
+    padding-top: 60px;
+}
+
+.delivery-container .faq-container {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.delivery-container .faq-container .faq-content {
+    margin-top: 20px;
+}
+
+.delivery-container .faq-container .faq-content .faq-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 0 6.666666666666667px 20px 0px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.delivery-container .faq-container .faq-content .faq-block i {
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.delivery-container .faq-container .faq-content .faq-block .faq-bx-open {
+    transform: rotate(180deg);
+}
+
+.delivery-container .faq-container .faq-content .faq-active {
+    display: block !important;
+}
+
+.delivery-container .faq-container .faq-content .faq-text {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 6.666666666666667px 10px 0px rgba(0, 0, 0, 0.1);
+    margin-top: -10px;
+    padding: 1px 15px 0px 15px;
+    text-align: left;
+    display: none;
+}
+
+.delivery-container .faq-container .faq-content .faq-text p {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+}
+
+@media (max-width: 1130px) {
+    .delivery-blocks {
+        flex-direction: column;
+    }
+    .delivery-container .faq-container {
+        width: auto;
+    }
+    .delivery-container .faq-container .faq-content .faq-block .faq-title {
+        text-align: left;
+    }
+}
+
+@media (max-width: 715px) {
+    .delivery-blocks .delivery-block {
+        width: 100%;
+    }
+}
